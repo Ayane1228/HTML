@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+			<style type="text/css">
+				*{
+					margin: 0;/*所有元素的边距设置为0*/
+				}
+				#box{
+					width: 1000px;/*手动设置父元素的高度与子元素一致*/
+					overflow: auto;/*设置父元素自动溢出，充满整个子元素*/
+					margin: auto;/*设置父元素的边距为自动即左右自动相等，只对左右边距有效*/
+				}
+				.item{
+
+				float: left;
+				margin: 20px;
+				border: 5px solid black;
+				padding: 15px;/*内边距*/
+				}
+
+			</style>
+			
+	</head>
+	<style></style>
+	<body>
+		<div id="box">
+			<div class="item" >
+				<img src="img/1.jpg" >
+					test
+			</div>
+			<div class="item" >
+				<img src="img/2.jpg" >
+						test
+			</div>
+			<div class="item" >
+				<img src="img/3.jpg" >
+				test
+			</div>	
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+			<style type="text/css">
+				*{margin: 0;padding: 0;}
+				form{
+					width:600px;
+					border:1px #000000 solid;
+					margin:0 auto;
+					padding: 10px;
+					}
+				p{margin-bottom: 20px;}
+				fieldset{margin-bottom: 10px;padding:10px}
+			legend{
+				border: 1px #000000 solid;
+				padding: 5px 10px;
+			}
+			</style>
+			
+	</head>
+	<body>
+		<!-- 表单字段集：
+						<fieldset><fieldset />相当于一个方框，在字段集中可以包含文本和其他信息
+						<legend></legend>字段级标题，可插入一个标题，
+						一定要放在<fieldset><fieldset />中的第一个。
+			-->
+		<!--提示信息标签：
+						<label for="绑定控件ID名"></label>
+						label元素用来定义标签，为页面上其他元素指定提示信息，
+						要将for属性设置为该ID的属性值
+			-->	
+		<!-- 表单：
+				表单接口
+				提交方式
+				后端接口-->
+				<!-- 表单控件 --><
+		<form name="f1" method="post" action="">
+			<fieldset>
+				<legend>基本信息</legend>
+				<p>姓名：<input type="text" /> <p>
+				<p>密码：<input type="password" /></p>
+				<p><input type="reset" value="重置"/></p>
+				<p>
+					性别：
+					<lable for="male">
+						男
+					</lable>	
+						<input type="radio"name="sex" id="male"/>
+
+					<lable for="famle">
+						女
+					</lable>
+						<input type="radio"name="sex" id="famle"/></p>
+					
+					<!-- 
+							lable使得男/女和控件进行了绑定，
+							点击男和女时一样会有效果
+							-->
+
+				<!-- 单选按钮和单选框需定义名字，作为同一组 -->
+			</fieldset>
+			<fieldset>
+				<p>
+					爱好：聊天<input type="checkbox" name="hobby" />
+					睡觉<input type="checkbox" name="hobby" />
+					看书<input type="checkbox" name="hobby" />
+				</p>
+				<!-- 多选框 -->
+				<p>出生年月：
+							<select>
+									<option>2000</option>
+									<option>1999</option>
+									<option>1998</option>
+									<option>1997</option>
+							</select>年
+							<select>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+							
+							
+							</select>月
+							</p>
+							<!-- 下拉菜单 -->
+				<p>
+					个人简介：
+					<textarea cols="50" rows="5"></textarea>
+				</p>
+			</fieldset>	
+			<!-- 
+					宽能放50个字符
+					高放5个字符
+					-->
+		</form>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+			<style type="text/css">
+				.box1,.box2{width: 600px;border:2px #000000 solid;margin-bottom: 20px;}
+				.box1 span{background-color: #0000FF;}/* 包含选择器 ：不管在那个标签下的span标签都会变化*/
+				.box2>span{background-color: #00FFFF;}/* 子选择器：只选择下一层
+				 */
+			</style>
+	</head>
+	<body>
+		<div class="box1">
+			<h1>+框架课程视频 P237-P252 (应该是略讲几种框架的项目实战） 共16集
+			+网页实战(项目精讲?) P253-P281 共28集
+				<span>	（+web前端入门教程（40集）P282-P321</span>
+			+GraphQL P322-P330 (是一种查询API的语言）共8集</h1>
+			+VUE服务器渲染+ P331-P356 共25集
+			<span>			（+Vue+ P694-P722 共28集）</span>
+			+angular+ P357-P432 共75集
+			+node.js P433-P469 （+VUE.js ?） 共36集
+			+Touch实战+ P470-P516 共46集
+			+手机通讯录实战+ P517-P541 共24集
+			+混合开发+ P542-P554 共12集
+			+微信小程序+ P555-P584 共30集
+			+react+ P662-P693 共31集
+		</div>
+		<div class="box2">
+			+框架课程视频 P237-P252 (应该是略讲几种框架的项目实战） 共16集
+			+网页实战(项目精讲?) P253-P281 共28集
+			<h1><span>（+web前端入门教程（40集）P282-P321
+			+GraphQL P322-P330 (是一种查询API的语言）共8集</span></h1>
+			+VUE服务器渲染+ P331-P356 共25集
+			<span>			（+Vue+ P694-P722 共28集）</span>
+			+angular+ P357-P432 共75集
+			+node.js P433-P469 （+VUE.js ?） 共36集
+			+Touch实战+ P470-P516 共46集
+			+手机通讯录实战+ P517-P541 共24集
+			+混合开发+ P542-P554 共12集
+			+微信小程序+ P555-P584 共30集
+			+react+ P662-P693 共31集
+		</div>
+	</body>
+</html>

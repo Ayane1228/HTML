@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.nv1{margin-bottom: 3.125rem;}
+			.nv1 li:first-child{background-color: #0000FF;}	/* 修改第一个的属性 */
+			.nv1 li:last-child{background-color: #FF359A;}/*修改最后一个*/
+			 .nv1 li:nth-child(2){background-color: aqua;}
+			 /*修改指定位数的属性
+									（）：填写odd --->：第奇数个
+											even--->第偶数个:中间不能插入其他元素，奇偶位指所有元素
+											可用nth-of-type()：选择一种元素中的奇偶元素--先选类型，在选择奇偶
+									*/
+			.nv2 li:nth-child(odd){background-color: darkorchid;}					   
+			.nv2 li:nth-child(even){background-color: gold;}	
+				/* .							nv3 li:nth-child(αn+β){;}：
+												共α中的第β个的属性。
+												*/
+						.nv3 li:nth-child(7n+1){background-color: red;}				
+						.nv3 li:nth-child(7n+2){background-color: orange;}	
+						.nv3 li:nth-child(7n+3){background-color: yellow;}	
+						.nv3 li:nth-child(7n+4){background-color: green;}	
+						.nv3 li:nth-child(7n+5){background-color: blue;}	
+						.nv3 li:nth-child(7n+6){background-color: cyan;}	
+						.nv3 li:nth-child(7n){background-color: violet;}	
+						/* nth-child（only child）：只有一个元素时使用，当有多个元素同时存在，但只要对有一个元素模型使用时。 */
+		</style>
+	</head>
+	<body>
+		<h1>列表A</h1>
+			<ul class="nv1">
+				<li>类表项目1</li>
+				<li>类表项目2</li>
+				<li>类表项目3</li>
+				<li>类表项目4</li>
+				<li>类表项目5</li>
+				<li>类表项目6</li>
+			</ul>
+			<h1>列表B</h1>
+				<ul class="nv2">
+					<li>类表项目1</li>
+					<li>类表项目2</li>
+					<li>类表项目3</li>
+					<li>类表项目4</li>
+					<li>类表项目5</li>
+					<li>类表项目6</li>
+				</ul>
+				<p></p>
+				<h1>列表C</h1>
+					<ul class="nv3">
+						<li>类表项目1</li>
+						<li>类表项目2</li>
+						<li>类表项目3</li>
+						<li>类表项目4</li>
+						<li>类表项目5</li>
+						<li>类表项目6</li>
+						<li>类表项目7</li>
+					</ul>
+	</body>
+</html>

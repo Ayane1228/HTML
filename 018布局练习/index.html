@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+			<style>
+				*{
+					margin: 0;
+					padding: 0;
+				}
+				#header{
+					height: 50px;
+					background-color: #E83828;
+				}
+				#header .head{
+					width: 1005px;height: 50px;
+					background: #808080;
+					margin: auto;
+				}
+				#banner{
+					height: 500px;
+					background: slateblue;
+				}
+				#category{
+					width: 1060px; height:200px ;
+					margin: auto;
+					background: #FF359A;
+				}
+				#category .item{
+					width: 125px; height: 165px;
+					padding-left: 25px;
+					padding-right: 25px;
+					padding-bottom:25px;		
+					padding-top: 10px;
+					border-right: 1px dashed black;
+					float: left;				
+					}
+					/*
+					宽为125px，高为165px
+					内部填充 上左右均为25px，下为10px
+					添加边框线 大小1px 样式dash（虚线框）颜色黑色
+					自由左浮动（使得在一排上）*/
+				#category .item.first{
+					padding-left: 0;/*去掉第一个左边的边框*/
+				}	
+				#category .item.last{
+				padding-right: 0;
+				border: 0;
+				}
+				#case{
+					height: 490px;
+					background: #eeeeee;
+				}
+				#case .title-text{ 
+					width: 1005px;
+					margin: auto;	
+					padding-top: 20px;
+					padding-bottom: 10px;
+					font-size: 45px;
+				}
+				#case .item-writer{
+					width: 1000px;
+					margin: auto;
+					overflow: auto;
+				}
+				#case .item-writer .item{
+					height: 320px;
+					width: 320px;
+					background: #9ACD32;
+					float: left;
+				}
+				#case .item-writer .item.mid{
+					margin-left: 20px;
+					margin-right: 20px;
+				}
+				#case P{
+					width: 1005px;height: 40px;
+					margin-left: auto;margin-right: auto;
+					margin-top:15px ;
+					margin-bottom: 40px;
+					text-align: center;
+					font-size: 30px;
+					color: dimgray;
+				}
+			</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="head"></div>
+		</div>
+	<div id="banner"></div>
+	<div id="category">
+		<div class="item first"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item"></div>
+		<div class="item last"></div>
+	</div>	
+	<div id="case">
+		<div class="title-text">
+			case
+		</div>
+		<div class="item-writer">
+			<div class="item"></div>
+			<div class="item mid"></div>
+			<div class="item"></div>
+		</div>
+			<p>查看更多</p>
+	</div>		
+	</body>
+</html>

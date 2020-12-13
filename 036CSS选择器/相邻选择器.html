@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.nv1 li+li {background-color: #0000FF;}
+			.nv2 .I+li {background-color: #0000FF;}
+			/* 相邻兄弟选择器：E+F: E F有相同的父元素，
+					且选择是紧接在另一元素后的元素【E后面的元素F，F后面的元素。。。（这里第二个之后都选中的原因是因为从第二个开始都是上一个li之后的li）】
+					 不同见下一个*/	
+		</style>
+	</head>
+	<body>
+		<h1>列表A</h1>
+			<ul class="nv1">
+				<li>类表项目1</li>
+				<li>类表项目2</li>
+				<li>类表项目3</li>
+				<li>类表项目4</li>
+				<li>类表项目5</li>
+				<li>类表项目6</li>
+			</ul>
+			<h1>列表B</h1>
+				<ul class="nv2">
+					<li>类表项目1</li>
+					<li class="I">类表项目2</li>
+					<li>类表项目3</li>
+					<li class="I">类表项目4</li>
+					<li>类表项目5</li>
+					<li>类表项目6</li>
+			</ul>			
+	</body>
+</html>

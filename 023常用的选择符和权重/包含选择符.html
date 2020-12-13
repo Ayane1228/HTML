@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 				包含选择器：
+				选择符1 选择符2{属性：属性值；}
+				选择符1和选择符2之间用空格隔开，指选择符1中的包含的所有选择符2 */
+				.box1,.box2{width:200px;border: 3px #000000 solid;margin-bottom: 20px;}
+				/* 上一条是一条群组选择器 */
+		 .box1 span{color: #DC143C;}	
+				/* 包含选择器：指box1下的span标签内的内容 */
+		 .box2 span{color:orange;}
+		 /* 包含选择器：指box2下的span标签内的内容 */
+		</style>
+	</head>
+	<body>
+		<div class="box1">				包含选择器：
+				选择符1 选择符2{属性：属性值；}
+				<span class="red">选择符1和选择符2之间用空格隔开，指选择符1中的包含的所有选择符2</span></div>
+		<div class="box2">				包含选择器：
+				选择符1 选择符2{属性：属性值；}
+				<span>选择符1和选择符2之间用空格隔开，指选择符1中的包含的所有选择符2</span></div>		
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box1{width: 100px;height: 3000px;background-color: #0000FF;}
+			.box2{width:100px;height: 3000px;background-color: #008000;}
+			.back{position: fixed;bottom: 0px;right: 0px;}
+		</style>
+	</head>
+	<body>
+		<!-- 锚点链接：做一个同一个页面内的跳转
+		 给需要跳转的位置添加ID-->
+		 <p id="top">dingbu</p>
+		<h1 id="p1">位置1</h1>
+		<div class="box1"></div>
+		<h2 id="p2">位置2</h2>
+		<div class="box2"></div>
+		<a href="#p1">这是一个锚点的超链接-跳转到位置1</a>
+		<a href="#p2">这是一个锚点的超链接-跳转到位置2</a>
+		<div class="back">
+					<a href="#top"> 回到最上方</a>
+		</div>
+
+	</body>
+</html>

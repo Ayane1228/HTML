@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {margin: 0;padding: 0;}
+			.box{border: 1px #000000 solid;display:flex;margin-bottom: 20px;}
+						section{width: 50px;height: 50px;border: 1px #0000FF solid;}
+						/* 			display:flex;变为弹性盒，写在父元素上  */
+			.box2{border: 1px #000000 solid;display:inline-flex;margin-bottom: 20px;}
+						section{width: 50px;height: 50px;border: 1px #0000FF solid;}
+			/* 
+			display:inline-flex;变为行内元素==>宽和高由子元素决定
+			*/						
+			.box3{border: 1px #000000 solid;display:flex;justify-content: flex-end;}
+						section{width: 50px;height: 50px;border: 1px #0000FF solid;}
+			/* 设置盒子的子元素在主轴上的排列方式：justify-content:
+				flex-start（靠主轴的起始位置）/flex-end（靠主轴的结束位置）/space-center/space-around(左右也有margin值)
+				设置盒子的子元素在主轴上的排列方式：align-content:
+				flex-start（靠侧轴的起始位置）/flex-end（靠侧轴的结束位置）/space-center/space-around(左右也有margin值)
+				设置盒子的子元素在侧轴上的对齐方式:align-items
+				flex-start: 侧轴起始位置的起始边界对齐;
+				flex-end：侧轴起始位置的结束边界对齐
+				center:居中对齐
+				baseline:文字对齐
+				stretch:未设置宽高则将元素默认拉伸为父元素大小*/			
+
+		</style>
+	</head>
+	<body> 
+			<div class="box">
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+			</div>
+			<div class="box2">
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+			</div>
+			<div class="box3">
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+			</div>
+	</body>
+</html>

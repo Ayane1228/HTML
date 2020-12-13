@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>			
+	<style>
+	.a{
+				width: 20%;
+				background-color: green;
+				
+			}
+			.b{
+				width: 60%;
+				background-color: gray;
+				
+			}
+			.c{
+				width: 20%;
+				background-color: crimson;
+				
+			}
+			.a,.b,.c{
+				float: left; 
+				height:200px
+					}/*容器统一样式*/
+			.d{
+				height: 31.25rem;
+				background: #000000;
+			}		
+			.outer{
+				/*height: 200px;          1.手动设置父元素的高度*/
+				overflow: auto;/*对于超出父元素边界的子元素自动进行调整*/
+
+			}
+	</style>
+	<body>
+		<div class="outer">
+			<div class="a"></div>
+			<div class="b"></div>
+			<div class="c"></div>
+		</div>
+
+		<div class="d"></div>
+	</body>
+</html>

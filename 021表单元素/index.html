@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<!-- 		
+	表单域 ：
+			<form name="表单名称" method="get/post"action=""></form>
+		action:后端使用
+		get：从服务器上获取数据，
+		post：用来向服务器上传递数据 
+		
+		常用的表单控件：			
+			文本框：<input type="text"value="初始值" />
+			密码框：<input type="password" />
+			提交按钮：<input type="submit"value="按钮内容"/>
+			重置按钮：<input type="reset"value="按钮内容" />
+			单选框：<input type="radio" name="">姓名之单选框的名字，单选框成对出现，姓名需相同，相同之后，只可选中其中一个。
+			复选框：<input type="checkbox" name=""  />
+			禁用：disabled
+			默认选中：checked
+			按钮：<input type="button"value="按钮" />
+			下拉菜单：				
+				<select>
+					<option>选项1</option>
+					<option>选项2</option>
+					<option>选项3</option>
+					<option>选项4</option>
+				</select>
+			多行文本框：				
+					<textarea cols=""rows="">	
+					</textarea>
+					（内部填写的数字指可以填写的字符个数，而不是指文本框的大小）
+					-->
+	<body>
+		<from name="f1"method="post" action="">
+			<p>
+				姓名：<input type="text"value="" />
+			</p>
+			<p>	
+				密码：<input type="password" />
+			</p>
+				<input type="submit"value="提交按钮"/>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="reset"value="重置按钮" />
+			<p>
+				性别：男<input type="radio" name="sex" checked="checked"/>&nbsp;&nbsp;&nbsp;&nbsp;女<input type="radio" name="sex" />
+			</p>
+			<p>
+				爱好：
+				<input type="checkbox" name="hobby" />运动
+				<input type="checkbox" name="hobby" />聊天
+				<input type="checkbox" name="hobby" disabled="disabled"/>玩游戏
+				
+				<p>
+					年龄：
+				<select>
+					<option>20~25</option>
+					<option>25~30</option>
+					<option>30~35</option>
+					<option>35~40</option>
+				</select>			
+				</p>
+				<p>
+					<input type="button"value="按钮	" />
+				</p>
+				<p>
+					个人信息介绍：
+					<textarea cols="100"rows="10">
+						
+					</textarea>
+				</p>	
+				
+
+		</from>
+	</body>
+</html>

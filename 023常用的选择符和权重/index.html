@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.1{
+				border-style: hidden;
+				color: aqua;}	
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: #ffaa7f;
+				border:black;
+				border-style: solid;}
+			h1{
+				font-weight:normal ;
+			}
+			#box{
+				width:12.5rem;
+				height:200px;
+				border:black;
+				border-width: 3px;
+				border-style: dashed;	
+				}
+
+			/* CSS样式由2部分组成:选择符+声明;声明分为属性和属性值;属性放在"{}”中属性与属性值用“：”连接；
+			每条属性值在属性中不分先后（border：10px solid #1000）【不分先后】，
+			用分号结束一条声明 
+			
+			选择符：要定义的样式对象，可以是元素本身，也可以是一类元素或者制定名称的元素
+			常用的选择符：
+			元素/类型选择符：文档语言的对象类型（使用结构中的元素名称作为选择符，如：body，div，p，img，em，strong）
+			类（class）选择符:.class名{属性：属性值；}
+			id选择符：#id名{属性：属性值；}
+			通配符：*{属性：属性值；}
+			伪类选择符*/
+		</style>
+	</head>
+	<body>
+		<p>
+			<div>元素选择符</div>
+		</p>
+		<p>
+			
+			<div id="box">id选择符</div>
+		</p>
+		<p>
+					<h>元素选择符</h>
+		</p>
+		<p>
+			<div class="1">类选择符</div>
+			<div>类选择符</div>
+			<div class="1">类选择符</div>
+			<div>类选择符</div>
+			<div class="1">类选择符</div>
+			<div>类选择符</div>
+		</p>
+
+	</body>
+</html>

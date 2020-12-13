@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+			<style type="text/css">
+				*{
+					margin: 0;/*所有元素的边距设置为0*/
+				}
+				.outer{
+					width: 750px;/*手动设置父元素的高度与子元素一致*/
+					overflow: auto;/*设置父元素自动溢出，充满整个子元素*/
+					margin: auto;/*设置父元素的边距为自动即左右自动相等，只对左右边距有效*/
+					/*
+					margin-top： 	上边距
+					margin-bottom：	下边距
+					margin-left：	左边距
+					margin-right：	右边距*/
+					
+				}
+				.item{
+					width: 210px;
+					height: 136px;
+				float: left;
+				margin: 20px;
+				}
+			</style>
+			
+	</head>
+	<style></style>
+	<body>
+		<div class="outer">
+			<div class="item" style="background-image: url(img/1.jpg);"></div>
+			<div class="item" style="background-image: url(img/2.jpg);"></div>
+			<div class="item" style="background-image: url(img/3.jpg);"></div>	
+		</div>
+
+	</body>
+</html>
